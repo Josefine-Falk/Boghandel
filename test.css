@@ -180,7 +180,8 @@ nav {
 }
 
 .mySlides {
-  display: none;
+  display:none;
+  padding-left: 400px;
 }
 
 #about-skrift {
