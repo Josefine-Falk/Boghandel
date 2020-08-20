@@ -1,0 +1,5 @@
+.container-books {
+    display: grid;
+    grid-template-areas: 'bone btwo bthree bfour';
+    grid-template-rows: auto;
+}
