@@ -6,6 +6,7 @@ $bg-color-black:#000;
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
   }
   
   /* Menu */
@@ -140,8 +141,71 @@ $bg-color-black:#000;
     background: rgba(70, 8, 8, 0.945);
   }
   
+  .dropbtn{
+    background-color: $bg-color-orange;
+    color: $bg-color-white;
+    padding:16px ;
+    font-size: 16px;
+    border: none;
+  }
+  .dropdown{
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: $bg-color-black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px $bg-color-darkred;
+    z-index: 1;
+  }
+  .dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover{background-color: #ddd;}
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {background-color: #c24067;}
+
+  //slide show
+  .mySlides{
+    display: none;
+  }
+
+//Om os
   
-  
+  #about-skrift{
+    text-align: center;
+    color: $bg-color-white;
+    padding: 2px;
+  }
+  .about{
+    background-color:$bg-color-darkred ;
+    height: 200px;
+    padding: 10px;
+  }
+
+  .text-about{
+    text-align: center;
+    font-size: 18px;
+    color: $bg-color-white;
+    padding: 20px;
+  }
+
+  .aabningstider{
+    background-color: $bg-color-black;
+    height: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .text-aabningstider{
+    color: $bg-color-white;
+    text-align: center;
+    padding: 10px;
+  }
   /* Footer */
   .footer{
     height: 260px;
