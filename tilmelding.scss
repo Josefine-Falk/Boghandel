@@ -3,11 +3,16 @@ $bg-color-darkred: rgba(70, 8, 8, 0.945);
 $bg-color-white:#fff;
 $bg-color-black:#000;
 
-
+.joinpage {
+    grid-template-columns: 50% 50%;
+    display: grid;
+}
   .joinform {
-      margin-left: 800px;
     color: $bg-color-darkred;
     max-width: 400px;
+    justify-self: end;
+    margin-right: 50px;
+    grid-column-start: 1;
   }
 .msgform input {
 margin: 10px;
@@ -50,3 +55,19 @@ text-decoration: underline;
     background-color: $bg-color-orange;
     color: $bg-color-darkred;
   }
+.joindiv {
+    grid-column-start: 2;
+    max-width: 40%;
+    justify-self: start;
+    margin-left: 50px;
+    color: $bg-color-darkred;
+    margin-top: 130px;
+}
+.joinhead {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.joininfo {
+    margin-bottom: 7px;
+}

@@ -1,7 +1,18 @@
+.joinpage {
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  display: -ms-grid;
+  display: grid;
+}
+
 .joinform {
-  margin-left: 800px;
   color: rgba(70, 8, 8, 0.945);
   max-width: 400px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 50px;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
 }
 
 .msgform input {
@@ -48,5 +59,26 @@
 .btn:hover {
   background-color: #EF9B2A;
   color: rgba(70, 8, 8, 0.945);
+}
+
+.joindiv {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  max-width: 40%;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 50px;
+  color: rgba(70, 8, 8, 0.945);
+  margin-top: 130px;
+}
+
+.joinhead {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.joininfo {
+  margin-bottom: 7px;
 }
 /*# sourceMappingURL=tilmelding.css.map */
