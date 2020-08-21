@@ -14,8 +14,18 @@ $bg-color-black:#000;
     font-family: sans-serif;
     position: sticky;
     top: 0;
+    color: white;
+    font-size: 20px;
   }
   
+  ul{
+    background-color: $bg-color-orange;
+    list-style: none;
+    margin: 0;
+    padding-left:0 ;
+  }  
+
+
   #checkbox1,
   .toogle {
     display: none;
@@ -173,6 +183,9 @@ $bg-color-black:#000;
   //slide show
   .mySlides{
     display: none;
+  }
+  .slideshow{
+
   }
 
 //Om os

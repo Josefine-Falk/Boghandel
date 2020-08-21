@@ -10,6 +10,15 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  color: white;
+  font-size: 20px;
+}
+
+ul {
+  background-color: #EF9B2A;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
 }
 
 #checkbox1,
@@ -180,8 +189,7 @@ nav {
 }
 
 .mySlides {
-  display:none;
-  padding-left: 400px;
+  display: none;
 }
 
 #about-skrift {
