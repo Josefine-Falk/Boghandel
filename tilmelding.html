@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilmelding</title>
+    <link rel="stylesheet" href="/test.css">
+    <link rel="stylesheet" href="/tilmelding.css">
+</head>
+<body>
+     <!-- Menu -->
+     <nav>
+        <input type="checkbox" id="checkbox1" />
+  <label for="checkbox1">
+<ul class="menu demo">
+  <li><a href="/test.html">Forside</a></li>
+  <li><a href="/aktuelt.html">Aktuelt</a></li>  
+  <li><a href="/bogklubben.html">Bogklubben</a>
+  <ul>
+    <li><a href="#">Nyheder</a> </li>
+    <li><a href="#">Arrangementer</a></li>
+    <li><a href="#">Månedens bog</a></li>
+   <li><a href="#">Bog tips</a></li>
+  </ul>
+  </li> 
+  </div>  
+  </div>
+  <li><a href="/laane-boersen.html">Låne børsen</a></li>  
+  <li id="tilmelding"><a href="/tilmelding.html"></a>Tilmelding</li>
+</ul>
+  <span class="toggle">☰</span>
+  </label>
+    </nav>
+    <!-- Tilmeldingsformular -->
+    <div class="joinform">
+        <form class="msgform" id="msgform">
+          <label for="txtName" class="joinlabel">Navn</label> <br/>
+          <input type="text" placeholder="Navn" name="txtName" class="joinfield" id="txtName"/> <br/>
+          <label for="txtAdress" class="joinlabel">Adresse</label> <br/>
+          <input type="text" placeholder="Adresse" name="txtAdress" class="joinfield" id="txtAdress"/> <br/> 
+          <label for="txtCity" class="joinlabel">Postnummer og by</label> <br/>
+          <input type="text" placeholder="Postnummer og by" name="txtCity" class="joinfield" id="txtCity"/> <br/>
+          <label for="txtEmail" class="joinlabel">E-mail</label> <br/>
+          <input type="text" placeholder="E-mail" name="txtEmail" class="joinfield" id="txtEmail"/> <br/>
+          <label for="txtPhone" class="joinlabel">Telefon</label> <br/>
+          <input type="text" placeholder="Telefon" name="txtPhone" class="joinfield" id="txtPhone"/> <br/>
+          <label for="txtMessage" class="joinlabel">Kommentar</label> <br/>
+          <textarea name="txtMessage" class="joinfield" cols="28" rows="15" placeholder="Kommentar" id="txtMessage"></textarea> <br/>
+          <button type="button" id="send" class="btn btn-success">SEND</button>
+      </form>
+      </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footadress"><p>Boghandlen</p><p>Sidevejen 31</p><p>3560 Bogense</p><p>55 33 23 16</p><p>Boghandlen@mail.dk </p></div>
+            <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5131.608344408829!2d10.393397675886211!3d55.51325211552781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ce23edea7f155%3A0x9711b8fd7fcdd695!2sBog%20%26%20id%C3%A9%20Otterup!5e0!3m2!1sda!2sdk!4v1597827918911!5m2!1sda!2sdk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          </footer>
+
+          <script src="tilmelding.js"></script>
+</body>
+</html>
