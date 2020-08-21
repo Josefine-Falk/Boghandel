@@ -287,4 +287,18 @@ ul {
       justify-self: end;
   margin-right: 100px;
 }
+
+@media only screen and (max-width: 550px) {
+  .footer {
+    font-size: 14px;
+  }
+  .frame {
+    max-width: 80%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .footcontact {
+    max-width: 50%;
+  }
+}
 /*# sourceMappingURL=test.css.map */
