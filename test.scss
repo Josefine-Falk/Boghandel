@@ -268,10 +268,13 @@ $bg-color-black:#000;
   }
   @media screen and (max-width: 550px) {
     .about{
-      height: 560px;
+      height: 420px;
     }
   }
-
+  #aabningstider-overskrift{
+    color: $bg-color-white;
+    padding-left: 650px;
+  }
   .aabningstider{
     background-color: $bg-color-black;
     height: 150px;
@@ -283,9 +286,17 @@ $bg-color-black:#000;
     text-align: center;
     padding: 10px;
   }
+  @media screen and (max-width: 550px) {
+    #aabningstider-overskrift{
+      padding-left: 180px;
+    }
+    .aabningstider{
+      height: 200px;
+    }
+  }
 /*Månedens bog*/
   .book-4{
-   padding-left: 800px;
+   padding-left: 550px;
     height: 500px;
   }
   #overskrift-book4{
@@ -337,7 +348,7 @@ $bg-color-black:#000;
   }
   .img-gallery{
     display: inline;
-    padding-left: 650px;
+    padding-left: 410px;
   }
   
   #book1{
@@ -403,7 +414,7 @@ $bg-color-black:#000;
   }
   #stoner-book{
     height: 400px;
-    padding-left: 830px;
+    padding-left: 580px;
   }
   @media screen and (max-width: 550px) {
     .Maanedens-bog{
@@ -424,7 +435,7 @@ $bg-color-black:#000;
   }
 .bog-tips-img{
   display: inline;
-  padding-left: 750px;
+  padding-left: 500px;
   
 }
   #new-01{
