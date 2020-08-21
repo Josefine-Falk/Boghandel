@@ -1,0 +1,97 @@
+$bg-color-orange:#EF9B2A;
+$bg-color-darkred: rgba(70, 8, 8, 0.945);
+$bg-color-white:#fff;
+$bg-color-black:#000;
+
+.joinpage {
+    grid-template-columns: 50% 50%;
+    display: grid;
+}
+  .joinform {
+    color: $bg-color-darkred;
+    max-width: 400px;
+    justify-self: end;
+    margin-right: 50px;
+    grid-column-start: 1;
+  }
+.msgform input {
+margin: 10px;
+border: solid;
+border-color: $bg-color-orange;;
+border-width: 2px;
+height: 20px;
+border-radius: 5px;
+padding: 3px;
+width: 213px;
+}
+#txtMessage {
+    border-color: $bg-color-orange;
+    border-width: 2px;;
+  font-family: sans-serif;
+  border-radius: 5px;
+  resize: none;
+  padding: 3px;
+  margin-top: 10px;
+margin-left: 10px;
+}
+.joinlabel {
+text-decoration: underline;
+}
+.btn {
+    padding-left: 93px;
+    padding-right: 93px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    background-color: $bg-color-darkred;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  color: $bg-color-white;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  }
+  .btn:hover {
+    background-color: $bg-color-orange;
+    color: $bg-color-darkred;
+  }
+.joindiv {
+    grid-column-start: 2;
+    max-width: 40%;
+    justify-self: start;
+    margin-left: 50px;
+    color: $bg-color-darkred;
+    margin-top: 130px;
+}
+.joinhead {
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.joininfo {
+    margin-bottom: 7px;
+}
+@media only screen and (max-width: 550px) {
+.joinpage {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 600px 750px;
+}
+.joindiv {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 20px;
+    justify-self: center;
+    margin-left: 0%;
+    
+}
+.joinform {
+    grid-column-start: 1;
+    grid-row-start: 2;
+    justify-self: center;
+    margin-right: 0%;
+}
+.joinhead {
+    font-size: 110%;
+}
+}
