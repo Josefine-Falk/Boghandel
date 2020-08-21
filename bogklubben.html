@@ -7,19 +7,59 @@
     <link rel="stylesheet" href="/test.css">
 </head>
 <body>
-    <nav>
-        <input type="checkbox" id="checkbox1" />
-  <label for="checkbox1">
+  <!-- Menu -->
+  <nav>
+    <input type="checkbox" id="checkbox1" />
+<label for="checkbox1">
 <ul class="menu demo">
-  <li><a href="/test.html">Forside</a></li>
-  <li><a href="/aktuelt.html">Aktuelt</a></li>  
-  <li><a href="/bogklubben.html">Bogklubben</a></li>  
-  <li><a href="/laane-boersen.html">Låne børsen</a></li>  
+<li><a href="/index.html">Forside</a></li>
+<li><a href="/aktuelt.html">Aktuelt</a></li>  
+<li><a href="/bogklubben.html">Bogklubben</a>
+<ul>
+<li><a href="#">Nyheder</a> </li>
+<li><a href="#">Arrangementer</a></li>
+<li><a href="/maanedens-bog.html">Månedens bog</a></li>
+<li><a href="#">Bog tips</a></li>
 </ul>
-  <span class="toggle">☰</span>
-  </label>
-    </nav>
+</li> 
+</div>  
+</div>
+<li><a href="/laane-boersen.html">Låne børsen</a></li>  
+<li id="tilmelding"><a href="/tilmelding.html"></a>Tilmelding</li>
+</ul>
+<span class="toggle">☰</span>
+</label>
+</nav>
+
+<section class="nyheder">
+  <h1 id="news">Nyheder</h1>
+  <div class="img-gallery">
+  <img id="book1" src="/img/Book_New_01.jpg" alt="Til døden os skiller">
+  <img id="book2" src="/img/Book_New_02.jpg" alt="100 års ensomhed">
+  <img id="book3" src="/img/Book_New_03.jpg" alt="Vejen til mellemøsten- den sande historie">
+</div>
+</section>
+
+<section class="Arrangementer">
+  <h2 id="arrangementer-overskrift">Arrangementer</h2>
+    <p id="tekst-arrangementer">Vi har forskellige arrangementer i løbet af året. <br> Der er læse cafe 3 dage om ugen, Mandag, Onsdag og Fredag. <br> Der er bogklub fredag-lørdag mellem 20.00-23-00. Søndag fra 10.00-14.00 <br> Flere arrangementer kommer løbende her på siden</p>
+</section>
+
+<section class="Maanedens-bog">
+<h2 id="maanedens-bog-overskrift">Månedens bog</h3>
+<img id="stoner-book" src="/Book_New_04.jpg" alt="">
+</section>
+
+<section class="bog-tips">
+<h2 id="bog-tips-overskrift">Bog tips</h2>
+<p id="tips-text">To bog tips fra nogle af de mest læste bøger</p>
+<div class="bog-tips-img">
+  <img id="new-01" src="/img/Book_New_01.jpg" alt="">
+  <img id="new-02" src="/img/Book_New_02.jpg" alt="">
+</div>
+</section>
     
+<!-- Footer -->
   <footer class="footer">
     <p>adresse </p>
     <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5131.608344408829!2d10.393397675886211!3d55.51325211552781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ce23edea7f155%3A0x9711b8fd7fcdd695!2sBog%20%26%20id%C3%A9%20Otterup!5e0!3m2!1sda!2sdk!4v1597827918911!5m2!1sda!2sdk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>

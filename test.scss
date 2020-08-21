@@ -8,7 +8,15 @@ $bg-color-black:#000;
     padding: 0;
     font-family: sans-serif;
   }
-  
+  #overskrift-forside{
+    text-align: center;
+  }
+  @media screen and (max-width: 550px) {
+    #overskrift-forside{
+      padding-left: 50px;
+      font-size: 30px;
+    }
+  }
   /* Menu */
   nav {
     font-family: sans-serif;
@@ -17,7 +25,7 @@ $bg-color-black:#000;
     color: white;
     font-size: 20px;
   }
-  
+  /*Dropdown menu*/
   ul{
     background-color: $bg-color-orange;
     list-style: none;
@@ -25,6 +33,44 @@ $bg-color-black:#000;
     padding-left:0 ;
   }  
 
+  li{
+    color: $bg-color-white;
+    background-color: $bg-color-orange;
+    display: block;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+  li a{
+    color: $bg-color-white;
+  }
+  li:hover{
+    background-color: $bg-color-darkred;
+    cursor: pointer;
+  }
+  ul li ul{
+    background-color: $bg-color-orange;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  ul li:hover >ul, 
+  ul li ul:hover{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  ul li ul li{
+    clear: both;
+    width: 100%;
+  }
 
   #checkbox1,
   .toogle {
@@ -35,7 +81,7 @@ $bg-color-black:#000;
     padding: 0;
     margin: 0;
     max-width: auto;
-    height: 50px;
+    height: 55px;
     border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -95,7 +141,7 @@ $bg-color-black:#000;
       transition: all .7s linear;
     }
     #checkbox1:checked + label .demo {
-      height: 200px;
+      height: 300px;
     }
     .menu {
       border-radius: 0px;
@@ -180,15 +226,27 @@ $bg-color-black:#000;
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: #c24067;}
 
-  //slide show
+  /*slide show*/
   .mySlides{
     display: none;
   }
   .slideshow{
+    height: 400px;
+    display: flex;
+    justify-content: center;
 
+      
+  }
+  @media screen and (max-width: 550px) {
+    .slideshow{
+      height: 330px;
+      padding-left: 50px;
+      padding-top: 30px;
+      padding-right:45px;
+    }
   }
 
-//Om os
+/*Om os*/
   
   #about-skrift{
     text-align: center;
@@ -207,6 +265,11 @@ $bg-color-black:#000;
     color: $bg-color-white;
     padding: 20px;
   }
+  @media screen and (max-width: 550px) {
+    .about{
+      height: 560px;
+    }
+  }
 
   .aabningstider{
     background-color: $bg-color-black;
@@ -219,6 +282,178 @@ $bg-color-black:#000;
     text-align: center;
     padding: 10px;
   }
+/*Månedens bog*/
+  .book-4{
+   padding-left: 800px;
+    height: 500px;
+  }
+  #overskrift-book4{
+    text-align: center;
+    font-size: 40px;
+  }
+  #text-book4{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 20px;
+  }
+  #text2-book4{
+    text-align: center;
+    font-size: 20px;
+  }
+  @media screen and (max-width: 550px) {
+    .book-4{
+      padding-left:150px;
+      padding-top: 5px;
+      height: 300px;
+    }
+    #overskrift-book4{
+      text-align: center;
+      font-size: 20px;
+    }
+    #text-book4{
+      text-align: center;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+    #text2-book4{
+      text-align: center;
+      font-size: 14px;
+    }
+  }
+
+  /*Nyheder*/
+  .nyheder{
+    height: 400px;
+    background-color: $bg-color-white;
+  }
+  #news{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    color: $bg-color-black;
+    
+  }
+  .img-gallery{
+    display: inline;
+    padding-left: 650px;
+  }
+  
+  #book1{
+    height: 300px;
+  }
+  #book2{
+    height: 300px;
+  }
+  #book3{
+    height: 300px;
+  }
+  .bog-titel{
+    font-size: 20px;
+
+  }
+  @media screen and (max-width: 550px) {
+    #news{
+      text-align: center;
+      padding-top: 10px;
+    }
+    .img-gallery{
+      display: grid;
+      grid-row: auto auto;
+      padding:5px;
+      padding-left: 150px;
+    }
+    .nyheder{
+      height: 1000px;
+    }
+  }
+  /*Arrangementer*/
+  .Arrangementer{
+    margin-top: 15px;
+    height: 220px;
+    background-color: $bg-color-darkred;
+  }
+  #arrangementer-overskrift{
+    color: $bg-color-orange;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 15px;
+  }
+  #tekst-arrangementer{
+    color: $bg-color-white;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+    line-height: 35px;
+  }
+  @media screen and (max-width: 550px) {
+    .Arrangementer{
+      height: 300px;
+    }
+  }
+  /*Månedens bog på bogklubben side*/
+  .Maanedens-bog{
+    height: 480px;
+  }
+  #maanedens-bog-overskrift{
+    text-align: center;
+    margin: 15px;
+    font-size: 30px;
+  }
+  #stoner-book{
+    height: 400px;
+    padding-left: 830px;
+  }
+  @media screen and (max-width: 550px) {
+    .Maanedens-bog{
+      height: 470px;
+    }
+    #stoner-book{
+      padding-left: 110px;
+    }
+  }
+  /*Bog-tips*/
+  .bog-tips{
+    height: 400px;
+    background-color: $bg-color-darkred;
+  }
+  #bog-tips-overskrift{
+    color: $bg-color-orange;
+    text-align: center;
+  }
+.bog-tips-img{
+  display: inline;
+  padding-left: 750px;
+  
+}
+  #new-01{
+    height: 300px;
+    margin-top: 10px;
+  }
+  #new-02{
+    height: 300px;
+  }
+  #tips-text{
+    color: $bg-color-white;
+    text-align: center;
+  }
+
+  /*bog tips responsiv*/
+  @media screen and (max-width: 550px) {
+    #bog-tips-overskrift{
+      text-align: center;
+    }
+    #tips-text{
+      text-align: center;
+      color: $bg-color-white;
+      margin: 5px;
+    }
+    .bog-tips-img{
+      display: inline;
+      padding-left: 50px;
+    }
+  }
+
   /* Footer */
   .footer{
     height: 260px;
