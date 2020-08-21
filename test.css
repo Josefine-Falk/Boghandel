@@ -232,17 +232,17 @@ ul {
   font-family: sans-serif;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  -ms-grid-columns: 20% 40% 40%;
+      grid-template-columns: 20% 40% 40%;
   -ms-grid-rows: 260px;
       grid-template-rows: 260px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .footadress {
   -ms-grid-column: 1;
       grid-column-start: 1;
-  -ms-grid-column-span: 1;
-      grid-column-end: span 1;
   -ms-grid-row: 1;
       grid-row-start: 1;
   -ms-grid-row-span: 3;
@@ -251,30 +251,40 @@ ul {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
   margin-left: 20px;
-  color: #fff;
-  font-weight: bold;
 }
 
 .frame {
-  position: fixed;
   padding: 15px;
-  padding-left: 1300px;
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-column-span: 3;
-      grid-column-end: span 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
   -ms-grid-row-span: 3;
       grid-row-end: span 3;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footadress p {
   margin-bottom: 5px;
+}
+
+.footcontact {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin-right: 100px;
 }
 /*# sourceMappingURL=test.css.map */
