@@ -1,0 +1,63 @@
+$bg-color-orange:#EF9B2A;
+$bg-color-darkred: rgba(70, 8, 8, 0.945);
+$bg-color-white:#fff;
+$bg-color-black:#000;
+
+
+form {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50px 50px 50px 100px;
+}
+form input {
+    margin: 10px;
+    border: solid;
+    border-color: $bg-color-orange;
+    border-width: 2px;
+    height: 20px;
+    border-radius: 5px;
+    padding: 3px;
+    }
+#txtBook {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+#txtName {
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+#txtEmail {
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+#txtAdress {grid-column-start: 2;
+    grid-column-end: 4;
+grid-row-start: 3;
+}
+#loan {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+}
+.btn {
+    background-color: $bg-color-darkred;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+  color: $bg-color-white;
+  font-weight: bold;
+  height: 40px;
+  width: 200px;
+  justify-self: center;
+  }
+  .btn:hover {
+    background-color: $bg-color-orange;
+    color: $bg-color-darkred;
+  }
+
+  @media only screen and (max-width: 550px) {
+.btn {
+    height: 30px;
+    width: 100px;
+}
+  }
