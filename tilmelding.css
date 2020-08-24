@@ -88,8 +88,8 @@
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 600px 750px;
-        grid-template-rows: 600px 750px;
+    -ms-grid-rows: 450px 750px;
+        grid-template-rows: 450px 750px;
   }
   .joindiv {
     -ms-grid-column: 1;
