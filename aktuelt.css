@@ -2,7 +2,22 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: 'bone btwo bthree bfour';
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  justify-items: center;
+}
+
+#book-new01 {
+  height: 300px;
+}
+
+#book-new02 {
+  height: 300px;
+}
+
+#book-new03 {
+  height: 300px;
+}
+
+#book-new04 {
+  height: 300px;
 }
 /*# sourceMappingURL=aktuelt.css.map */
