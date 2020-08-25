@@ -345,6 +345,16 @@ ul li ul li {
   font-size: 20px;
 }
 
+#text-stoner {
+  margin: 20px;
+  line-height: 25px;
+}
+
+#stoner-text {
+  margin: 20px;
+  line-height: 25px;
+}
+
 @media screen and (max-width: 550px) {
   .book-4 {
     padding-left: 150px;
@@ -358,11 +368,17 @@ ul li ul li {
   #text-book4 {
     text-align: center;
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 18px;
   }
   #text2-book4 {
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
+  }
+  #text-stoner {
+    line-height: 30px;
+  }
+  #stoner-text {
+    line-height: 30px;
   }
 }
 
