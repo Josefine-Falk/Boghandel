@@ -1,4 +1,4 @@
-$bg-color-orange:#EF9B2A;
+$bg-color-orange:#DB4437;
 $bg-color-darkred: rgba(70, 8, 8, 0.945);
 $bg-color-white:#fff;
 $bg-color-black:#000;
@@ -42,7 +42,7 @@ text-decoration: underline;
     padding-right: 93px;
     padding-top: 7px;
     padding-bottom: 7px;
-    background-color: $bg-color-darkred;
+    background-color: $bg-color-orange;
     border: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -52,7 +52,6 @@ text-decoration: underline;
   margin-bottom: 30px;
   }
   .btn:hover {
-    background-color: $bg-color-orange;
     color: $bg-color-darkred;
   }
 .joindiv {

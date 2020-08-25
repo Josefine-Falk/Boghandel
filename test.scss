@@ -1,4 +1,4 @@
-$bg-color-orange:#EF9B2A;
+$bg-color-orange:#DB4437;
 $bg-color-darkred: rgba(70, 8, 8, 0.945);
 $bg-color-white:#fff;
 $bg-color-black:#000;
@@ -46,7 +46,7 @@ $bg-color-black:#000;
     color: $bg-color-white;
   }
   li:hover{
-    background-color: $bg-color-darkred;
+    background-color: $bg-color-orange;
     cursor: pointer;
   }
   ul li ul{
@@ -125,14 +125,14 @@ $bg-color-black:#000;
       height: 40px;
       font-size: 18px;
       color: #000;
-      background: #EF9B2A;
+      background: $bg-color-orange;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
       -webkit-transition: all .1s linear;
       transition: all .1s linear;
     }
     .toggle:hover {
-      background: rgba(70, 8, 8, 0.945);
+      background: $bg-color-orange(70, 8, 8, 0.945);
     }
     #checkbox1:checked + label .demo li {
       opacity: 1;
@@ -186,7 +186,7 @@ $bg-color-black:#000;
   }
   
   .demo {
-    background: #EF9B2A;
+    background: $bg-color-orange;
   }
   
   .demo li a {
@@ -276,8 +276,8 @@ $bg-color-black:#000;
     padding-left: 650px;
   }
   .aabningstider{
-    background-color: $bg-color-black;
-    height: 150px;
+    background-color: $bg-color-orange;
+    height: 170px;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -386,7 +386,7 @@ $bg-color-black:#000;
     background-color: $bg-color-darkred;
   }
   #arrangementer-overskrift{
-    color: $bg-color-orange;
+    color: $bg-color-white;
     text-align: center;
     font-size: 30px;
     padding-top: 15px;
@@ -427,10 +427,10 @@ $bg-color-black:#000;
   /*Bog-tips*/
   .bog-tips{
     height: 400px;
-    background-color: $bg-color-darkred;
+    background-color: $bg-color-orange;
   }
   #bog-tips-overskrift{
-    color: $bg-color-orange;
+    color: $bg-color-white;
     text-align: center;
   }
 .bog-tips-img{
@@ -470,7 +470,7 @@ $bg-color-black:#000;
   .footer{
     width: 100%;
     height: 260px;
-    background-color:#EF9B2A ;
+    background-color:$bg-color-darkred ;
     font-family: sans-serif;
     display: grid;
     grid-template-columns: 20% 40% 40%;
