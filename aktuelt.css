@@ -1,8 +1,21 @@
 .container-books {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'bone btwo bthree bfour';
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
   justify-items: center;
+  margin-bottom: 2px;
+  grid-row-gap: 1em;
+}
+
+#books-aktuel {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2px;
+  margin-bottom: 25px;
 }
 
 #book-new01 {
@@ -19,5 +32,12 @@
 
 #book-new04 {
   height: 300px;
+}
+
+@media screen and (max-width: 550px) {
+  .container-books {
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
 }
 /*# sourceMappingURL=aktuelt.css.map */
