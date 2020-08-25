@@ -1,5 +1,17 @@
 .container-books {
     display: grid;
     grid-template-areas: 'bone btwo bthree bfour';
-    grid-template-rows: auto;
+    justify-items: center;
+}
+#book-new01{
+    height: 300px;
+}
+#book-new02{
+    height: 300px;
+}
+#book-new03{
+    height: 300px;
+}
+#book-new04{
+    height: 300px;
 }
