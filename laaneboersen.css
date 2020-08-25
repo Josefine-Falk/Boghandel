@@ -10,7 +10,7 @@ form {
 form input {
   margin: 10px;
   border: solid;
-  border-color: #EF9B2A;
+  border-color: #DB4437;
   border-width: 2px;
   height: 20px;
   border-radius: 5px;
@@ -55,7 +55,7 @@ form input {
 }
 
 .btn {
-  background-color: rgba(70, 8, 8, 0.945);
+  background-color: #DB4437;
   border: none;
   border-radius: 5px;
   margin-top: 20px;
@@ -68,7 +68,7 @@ form input {
 }
 
 .btn:hover {
-  background-color: #EF9B2A;
+  background-color: #DB4437;
   color: rgba(70, 8, 8, 0.945);
 }
 
