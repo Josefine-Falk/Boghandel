@@ -16,7 +16,9 @@
 }
 
 .msgform input {
-  margin: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
   border: solid;
   border-color: #DB4437;
   border-width: 2px;
@@ -34,7 +36,6 @@
   resize: none;
   padding: 3px;
   margin-top: 10px;
-  margin-left: 10px;
 }
 
 .joinlabel {
