@@ -147,8 +147,8 @@ nav span {
     cursor: pointer;
     height: 40px;
     font-size: 20px;
-    color: #000;
-    background: #DB4437;
+    color: #fff;
+    background: #000;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     -webkit-transition: all .1s linear;
