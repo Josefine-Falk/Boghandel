@@ -1,6 +1,7 @@
 .joinpage {
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
+  max-width: 1200px;
+  -ms-grid-columns: 66% 33%;
+      grid-template-columns: 66% 33%;
   display: -ms-grid;
   display: grid;
 }
@@ -8,11 +9,18 @@
 .joinform {
   color: rgba(70, 8, 8, 0.945);
   max-width: 400px;
-  -ms-grid-column-align: end;
-      justify-self: end;
   margin-right: 50px;
   -ms-grid-column: 1;
       grid-column-start: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.msgform {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 75% 75%;
+      grid-template-columns: 75% 75%;
 }
 
 .msgform input {
@@ -28,6 +36,13 @@
   width: 213px;
 }
 
+.colone {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
 #txtMessage {
   border-color: #DB4437;
   border-width: 2px;
@@ -36,6 +51,15 @@
   resize: none;
   padding: 3px;
   margin-top: 10px;
+}
+
+.coltwo {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-top: 42px;
+  margin-left: 15px;
 }
 
 .joinlabel {
@@ -54,6 +78,8 @@
   color: #fff;
   font-weight: bold;
   margin-bottom: 30px;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
 }
 
 .btn:hover {
@@ -63,12 +89,11 @@
 .joindiv {
   -ms-grid-column: 2;
       grid-column-start: 2;
-  max-width: 40%;
+  max-width: 70%;
   -ms-grid-column-align: start;
       justify-self: start;
-  margin-left: 50px;
   color: rgba(70, 8, 8, 0.945);
-  margin-top: 130px;
+  margin-bottom: 17px;
 }
 
 .joinhead {

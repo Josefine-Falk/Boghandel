@@ -4,15 +4,20 @@ $bg-color-white:#fff;
 $bg-color-black:#000;
 
 .joinpage {
-    grid-template-columns: 50% 50%;
+  max-width: 1200px;
+    grid-template-columns: 66% 33%;
     display: grid;
 }
   .joinform {
     color: $bg-color-darkred;
     max-width: 400px;
-    justify-self: end;
     margin-right: 50px;
     grid-column-start: 1;
+    justify-self: center;
+  }
+  .msgform {
+    display: grid;
+    grid-template-columns: 75% 75%;
   }
 .msgform input {
 margin-bottom: 10px;
@@ -25,6 +30,11 @@ height: 20px;
 border-radius: 5px;
 padding: 3px;
 width: 213px;
+
+}
+.colone {
+  grid-column-start: 1;
+  justify-self: end;
 }
 #txtMessage {
     border-color: $bg-color-orange;
@@ -34,6 +44,12 @@ width: 213px;
   resize: none;
   padding: 3px;
   margin-top: 10px;
+}
+.coltwo {
+  grid-column-start: 2;
+  justify-self: start;
+  margin-top: 42px;
+  margin-left: 15px;
 }
 .joinlabel {
 text-decoration: underline;
@@ -50,17 +66,17 @@ text-decoration: underline;
   color: $bg-color-white;
   font-weight: bold;
   margin-bottom: 30px;
+  grid-column-start: 2;
   }
   .btn:hover {
     color: $bg-color-darkred;
   }
 .joindiv {
     grid-column-start: 2;
-    max-width: 40%;
+    max-width: 70%;
     justify-self: start;
-    margin-left: 50px;
     color: $bg-color-darkred;
-    margin-top: 130px;
+    margin-bottom: 17px;
 }
 .joinhead {
     text-decoration: underline;
