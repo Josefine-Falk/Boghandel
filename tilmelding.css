@@ -6,6 +6,32 @@
   display: grid;
 }
 
+header {
+  position: relative;
+  color: white;
+}
+
+header img {
+  height: 350px;
+  width: 100%;
+  -webkit-filter: brightness(25%);
+          filter: brightness(25%);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.herotext {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 180%;
+  border-bottom: solid;
+}
+
 .joinform {
   color: rgba(70, 8, 8, 0.945);
   max-width: 400px;
@@ -58,7 +84,6 @@
       grid-column-start: 2;
   -ms-grid-column-align: start;
       justify-self: start;
-  margin-top: 42px;
   margin-left: 15px;
 }
 
@@ -69,12 +94,11 @@
 .btn {
   padding-left: 93px;
   padding-right: 93px;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  height: 30px;
   background-color: #128f26;
   border: none;
   border-radius: 5px;
-  margin-top: 20px;
+  margin-top: 19px;
   color: #fff;
   font-weight: bold;
   margin-bottom: 30px;
