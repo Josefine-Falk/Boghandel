@@ -240,26 +240,30 @@ $bg-color-black:#000;
   }
   
 
-  /*slide show*/
-  .mySlides{
-    display: none;
-  }
+  /*video*/
   #video-layer{
     height: 550px;
   }
   .slideshow{
     height: 600px;
     display: flex;
-    justify-content: center;
+    justify-content: center;  
+  }
+  .video-content{
+    position: fixed;
+    color: white;
+    margin-top: 40px;
+  padding-right: 350px;
+    font-weight: bold;
+    line-height: 25px;
+    background-color: red;
 
-      
   }
   @media screen and (max-width: 550px) {
     .slideshow{
-      height: 330px;
-      padding-left: 50px;
-      padding-top: 30px;
-      padding-right:45px;
+      width: 10px;
+      height: 570px;
+     padding-left: 6px;
     }
   }
 
@@ -274,7 +278,8 @@ $bg-color-black:#000;
   .about{
     background-color:$bg-color-darkred ;
     height: 200px;
-    padding: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
   }
 
   .text-about{
