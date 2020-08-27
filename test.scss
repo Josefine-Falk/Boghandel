@@ -2,6 +2,7 @@ $bg-color-orange:#DB4437;
 $bg-color-darkred: rgba(70, 8, 8, 0.945);
 $bg-color-white:#fff;
 $bg-color-black:#000;
+$bg-color-grey:rgb(236, 234, 234);
 
 * {
     margin: 0;
@@ -9,7 +10,7 @@ $bg-color-black:#000;
     font-family: sans-serif;
   }
   body{
-    background-color: rgb(236, 234, 234);
+    background-color: $bg-color-grey;
    
   }
 
@@ -55,11 +56,11 @@ $bg-color-black:#000;
     color: $bg-color-black;
   }
   li:hover{
-    background-color: $bg-color-orange;
+    background-color: $bg-color-grey;
     cursor: pointer;
   }
   ul li ul{
-    background-color: $bg-color-orange;
+    background-color: $bg-color-grey;
     visibility: hidden;
     opacity: 0;
     min-width: 5rem;
@@ -140,7 +141,7 @@ $bg-color-black:#000;
       cursor: pointer;
       height: 40px;
       font-size: 20px;
-      color: #000;
+      color: $bg-color-black;
       background: $bg-color-orange;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
@@ -210,7 +211,7 @@ $bg-color-black:#000;
   }
   
   .demo li a:hover {
-    background: $bg-color-orange;
+    background: $bg-color-grey;
   }
   
   .dropbtn{
@@ -229,11 +230,11 @@ $bg-color-black:#000;
     position: absolute;
     background-color: $bg-color-black;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px $bg-color-darkred;
+    box-shadow: 0px 8px 16px 0px $bg-color-black;
     z-index: 1;
   }
   .dropdown-content a{
-    color: black;
+    color: $bg-color-black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -241,24 +242,29 @@ $bg-color-black:#000;
   
 
   /*video*/
-  #video-layer{
-    height: 550px;
+  .text-video{
+    position: absolute;
+    width: 30%;
+    margin: auto;
+    left: 5%;
+    top: 13%;
+    padding: 2%;
+    color: $bg-color-white;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: rgba(0, 0, 0, 0.507);
+  }
+  .hero-video{
+    width: 100%;
   }
   .slideshow{
-    height: 600px;
     display: flex;
     justify-content: center;  
   }
-  .video-content{
-    position: fixed;
-    color: white;
-    margin-top: 40px;
-  padding-right: 350px;
-    font-weight: bold;
-    line-height: 25px;
-    background-color: red;
-
+  .slideshow video{
+     width: 100%;
   }
+  
   @media screen and (max-width: 550px) {
     .slideshow{
       width: 10px;
@@ -266,7 +272,6 @@ $bg-color-black:#000;
      padding-left: 6px;
     }
   }
-
 
 /*Om os*/
   
