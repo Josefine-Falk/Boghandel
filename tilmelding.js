@@ -4,42 +4,42 @@ btn.addEventListener("click", function() {
     let hasErrors = false;
     
     let name = document.getElementById("txtName"); //henter det valgte ID
-    if(!name.value) {name.style.borderColor = 'black';
+    if(!name.value) {name.style.borderColor = 'red';
     name.focus();
     hasErrors = true;
     return false;
     //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
 }
 let adress = document.getElementById("txtAdress"); //henter det valgte ID
-if(!adress.value) {adress.style.borderColor = 'black';
+if(!adress.value) {adress.style.borderColor = 'red';
 adress.focus();
 hasErrors = true;
 return false;
 //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
 }
 let city = document.getElementById("txtCity"); //henter det valgte ID
-if(!city.value) {city.style.borderColor = 'black';
+if(!city.value) {city.style.borderColor = 'red';
 city.focus();
 hasErrors = true;
 return false;
 //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
 }
 let email = document.getElementById("txtEmail"); //henter det valgte ID
-if(!email.value) {email.style.borderColor = 'black';
+if(!email.value) {email.style.borderColor = 'red';
 email.focus();
 hasErrors = true;
 return false;
 //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
 }
 let phone = document.getElementById("txtPhone"); //henter det valgte ID
-if(!phone.value) {phone.style.borderColor = 'black';
+if(!phone.value) {phone.style.borderColor = 'red';
 phone.focus();
 hasErrors = true;
 return false;
 //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
 }     
 let message = document.getElementById("txtMessage"); //henter det valgte ID
-if(!message.value) {message.style.borderColor = 'black';
+if(!message.value) {message.style.borderColor = 'red';
 message.focus();
 hasErrors = true;
 return false;

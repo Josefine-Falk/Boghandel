@@ -54,7 +54,7 @@ header img {
   margin-right: 10px;
   margin-top: 10px;
   border: solid;
-  border-color: #DB4437;
+  border-color: #929191;
   border-width: 2px;
   height: 20px;
   border-radius: 5px;
@@ -70,7 +70,7 @@ header img {
 }
 
 #txtMessage {
-  border-color: #DB4437;
+  border-color: #929191;
   border-width: 2px;
   font-family: sans-serif;
   border-radius: 5px;
@@ -95,7 +95,7 @@ header img {
   padding-left: 93px;
   padding-right: 93px;
   height: 30px;
-  background-color: #128f26;
+  background-color: #DB4437;
   border: none;
   border-radius: 5px;
   margin-top: 19px;
