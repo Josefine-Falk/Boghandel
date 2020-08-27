@@ -11,12 +11,11 @@ form {
 }
 form input {
     margin: 10px;
-    border: solid;
-    border-color: $bg-color-orange;
-    border-width: 2px;
-    height: 20px;
+    height: 23px;
     border-radius: 5px;
     padding: 3px;
+    border: none;
+    box-shadow: 2px 5px 5px rgb(146, 145, 145);
     }
 #txtBook {
     grid-column-start: 2;
@@ -49,6 +48,7 @@ grid-row-start: 3;
   height: 40px;
   width: 200px;
   justify-self: center;
+  box-shadow: 2px 5px 5px rgb(146, 145, 145);
   }
   .btn:hover {
     background-color: $bg-color-orange;

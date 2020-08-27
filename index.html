@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forside</title>
-    <link rel="stylesheet" href="/test.css">
+    <link rel="stylesheet" href="test.css">
 </head>
 <body>
   <!-- Menu -->
@@ -12,18 +12,17 @@
         <input type="checkbox" id="checkbox1" />
   <label for="checkbox1">
 <ul class="menu demo">
+  <img id="logo-boghandel" src="/logo.png" alt="">
   <li><a href="/index.html">Forside</a></li>
   <li><a href="/aktuelt.html">Aktuelt</a></li>  
   <li><a href="/bogklubben.html">Bogklubben</a>
-  <ul>
-    <li><a href="#">Nyheder</a> </li>
-    <li><a href="#">Arrangementer</a></li>
-    <li><a href="/maanedens-bog.html">Månedens bog</a></li>
-   <li><a href="#">Bog tips</a></li>
-  </ul>
-  </li> 
-  </div>  
-  </div>
+    <ul>
+    <li><a href="#news">Nyheder</a> </li>
+    <li><a href="#arrangementer-overskrift">Arrangementer</a></li>
+    <li><a href="#maanedens-bog-overskrift">Månedens bog</a></li>
+    <li><a href="#bog-tips-overskrift">Bog tips</a></li>
+    </ul>
+    </li> 
   <li><a href="/laane-boersen.html">Låne børsen</a></li>  
   <li id="tilmelding"><a href="/tilmelding.html">Tilmelding</a></li>
 </ul>
@@ -31,13 +30,27 @@
   </label>
     </nav>
     <h1 id="overskrift-forside">Velkommen til boghandlen</h1>
-    <!-- Slideshow -->
+    <!-- video -->
     <section class="slideshow"> 
-    <div class="w3-content w3-section" style="max-width:500px">
-      <img class="mySlides" src="Books_01.jpg" style="width:100%">
-      <img class="mySlides" src="Books_02.jpg" style="width:100%">
-      <img class="mySlides" src="/img/Cafe-02.jpg" style="width:100%">
-    </div>
+      <video id="video-layer" src="/img/Media/Living-Layer.mp4" autoplay muted></video>
+      <div class="video-content">
+        <p> Boghandlen er et litterært samlingssted <br>
+           for mennesker der ønsker kulturel inspiration, <br>
+            eller blot udvide intellektet blandt ligesindede. 
+          <br> De hyggelige lokaler danner rammen om næsten <br> daglige arrangementer.
+  
+          Boghandlen blev i 1814 etableret <br>
+           i det centrale Bogense af Stads Arkivar Viggo Skriversen. <br>
+          Her 200 år efter har vi netop afsluttet en større renovering <br>
+           af de gamle lokaler og udviklet et nyt koncept omkring glæden <br>
+            ved bøger og den trykte tekst!
+  
+         <br>        I bogklubben kan du føle dig udfordret kulturelt. <br>
+          Deltag i vores mange arrangementer eller køb aktuelle bøger med fordele. <br>
+          Boghandlens intime café er udgangspunktet for en eftermiddag/aften <br> i afslappende omgivelser med litterære udfordringer og inspiration. <br>
+           Caféen har sin egen vin import!</p>
+
+      </div>
   </section>
     
     <!-- Om os Boghandlen -->
@@ -55,39 +68,26 @@
         Boghandlens intime café er udgangspunktet for en eftermiddag/aften <br> i afslappende omgivelser med litterære udfordringer og inspiration. Caféen har sin egen vin import!
       </main>
     </section>
-
-    <!-- Åbningstider for boghandlen -->
-    <section class="aabningstider">
-      <h2 id="aabningstider-overskrift">Åbningstider</h2>
-      <main class="text-aabningstider">
-        Man - tor.:	09.00 - 18.00
-        <br>
-        Fre.:		09.00 - 21.00
-        <br>
-        Lør.:		10.00 - 14.00
-        <br>
-        <br>
-        Klubben:
-        <br>
-        Fre - Lør:	20.00 - 23.00
-        <br>
-        Søndag:		10.00 - 14.00
-      </main>
-    </section>
-
-
-    
-  
-    
-
-      
-
-
     <!-- Footer -->
     <footer class="footer">
-      <div class="footadress"><p>Boghandlen</p><p>Sidevejen 31</p><p>3560 Bogense</p></div>
+      <div class="footadress"><p>Boghandlen</p><p>Sidevejen 31</p><p>3560 Bogense</p>
+        <p>55 33 23 16</p><p>Boghandlen@mail.dk</p></div>
+        <div class="text-aabningstider">
+          Man - tor.:	09.00 - 18.00
+          <br>
+          Fre.:		09.00 - 21.00
+          <br>
+          Lør.:		10.00 - 14.00
+          <br>
+          <br>
+          Klubben:
+          <br>
+          Fre - Lør:	20.00 - 23.00
+          <br>
+          Søndag:		10.00 - 14.00
+        </div>
       <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5131.608344408829!2d10.393397675886211!3d55.51325211552781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ce23edea7f155%3A0x9711b8fd7fcdd695!2sBog%20%26%20id%C3%A9%20Otterup!5e0!3m2!1sda!2sdk!4v1597827918911!5m2!1sda!2sdk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-      <p class="footcontact">55 33 23 16<br/>Boghandlen@mail.dk </p>
+      
     </footer>
     
     <script src="/slides.js"></script>
