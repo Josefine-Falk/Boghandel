@@ -11,7 +11,8 @@ btn.addEventListener("click", function() {
     //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
 }
 let adress = document.getElementById("txtAdress"); //henter det valgte ID
-if(!adress.value) {adress.style.borderColor = 'red';
+if(!adress.value) {
+    adress.style.borderColor = 'red';
 adress.focus();
 hasErrors = true;
 return false;
@@ -37,14 +38,7 @@ phone.focus();
 hasErrors = true;
 return false;
 //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
-}     
-let message = document.getElementById("txtMessage"); //henter det valgte ID
-if(!message.value) {message.style.borderColor = 'red';
-message.focus();
-hasErrors = true;
-return false;
-//gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
-}                   
+}                     
 if(!hasErrors) {
 document.getElementById("msgForm").submit();
 //Lader formularen blive indsent hvis alle felter er udfyldt

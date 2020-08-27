@@ -1,7 +1,6 @@
 .joinpage {
-  max-width: 1200px;
-  -ms-grid-columns: 66% 33%;
-      grid-template-columns: 66% 33%;
+  -ms-grid-columns: 50% 25% 25%;
+      grid-template-columns: 50% 25% 25%;
   display: -ms-grid;
   display: grid;
 }
@@ -47,19 +46,20 @@ header img {
   display: grid;
   -ms-grid-columns: 75% 75%;
       grid-template-columns: 75% 75%;
+  height: 350px;
 }
 
 .msgform input {
   margin-bottom: 10px;
   margin-right: 10px;
   margin-top: 10px;
-  border: solid;
-  border-color: #929191;
-  border-width: 2px;
-  height: 20px;
+  border: solid white;
+  height: 19px;
   border-radius: 5px;
   padding: 3px;
   width: 213px;
+  -webkit-box-shadow: 2px 5px 5px #929191;
+          box-shadow: 2px 5px 5px #929191;
 }
 
 .colone {
@@ -70,13 +70,14 @@ header img {
 }
 
 #txtMessage {
-  border-color: #929191;
-  border-width: 2px;
+  border: none;
   font-family: sans-serif;
   border-radius: 5px;
   resize: none;
   padding: 3px;
   margin-top: 10px;
+  -webkit-box-shadow: 2px 5px 5px #929191;
+          box-shadow: 2px 5px 5px #929191;
 }
 
 .coltwo {
@@ -92,18 +93,18 @@ header img {
 }
 
 .btn {
-  padding-left: 93px;
-  padding-right: 93px;
+  width: 225px;
   height: 30px;
   background-color: #DB4437;
   border: none;
   border-radius: 5px;
-  margin-top: 19px;
+  margin-top: 25px;
   color: #fff;
   font-weight: bold;
-  margin-bottom: 30px;
   -ms-grid-column: 2;
       grid-column-start: 2;
+  -webkit-box-shadow: 2px 5px 5px #929191;
+          box-shadow: 2px 5px 5px #929191;
 }
 
 .btn:hover {
@@ -111,13 +112,33 @@ header img {
 }
 
 .joindiv {
+  padding-top: 10px;
+  padding-left: 10px;
   -ms-grid-column: 2;
       grid-column-start: 2;
+  max-width: 70%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: rgba(70, 8, 8, 0.945);
+  margin-bottom: 17px;
+  -webkit-box-shadow: 2px 5px 5px #929191;
+          box-shadow: 2px 5px 5px #929191;
+  border-radius: 5px;
+}
+
+.costdiv {
+  padding-top: 10px;
+  padding-left: 10px;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
   max-width: 70%;
   -ms-grid-column-align: start;
       justify-self: start;
   color: rgba(70, 8, 8, 0.945);
   margin-bottom: 17px;
+  -webkit-box-shadow: 2px 5px 5px #929191;
+          box-shadow: 2px 5px 5px #929191;
+  border-radius: 5px;
 }
 
 .joinhead {
@@ -136,8 +157,8 @@ header img {
     display: grid;
     -ms-grid-columns: 100%;
         grid-template-columns: 100%;
-    -ms-grid-rows: 450px 750px;
-        grid-template-rows: 450px 750px;
+    -ms-grid-rows: 250px 250px 750px;
+        grid-template-rows: 250px 250px 750px;
   }
   .joindiv {
     -ms-grid-column: 1;
@@ -148,18 +169,52 @@ header img {
     -ms-grid-column-align: center;
         justify-self: center;
     margin-left: 0%;
+    width: 75%;
   }
-  .joinform {
+  .costdiv {
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-row: 2;
         grid-row-start: 2;
     -ms-grid-column-align: center;
         justify-self: center;
-    margin-right: 0%;
+    margin-left: 0%;
+    width: 75%;
   }
-  .joinhead {
-    font-size: 110%;
+  .joinform {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-right: 0%;
+    margin-left: 0%;
+  }
+  .msgform {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 350px 350px;
+        grid-template-rows: 350px 350px;
+  }
+  .colone {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .coltwo {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    margin-left: 0%;
   }
 }
 /*# sourceMappingURL=tilmelding.css.map */
