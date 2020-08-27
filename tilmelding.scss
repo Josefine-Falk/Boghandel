@@ -45,7 +45,7 @@ margin-bottom: 10px;
 margin-right: 10px;
 margin-top: 10px;
 border: solid;
-border-color: $bg-color-orange;
+border-color: rgb(146, 145, 145);
 border-width: 2px;
 height: 20px;
 border-radius: 5px;
@@ -58,13 +58,13 @@ width: 213px;
   justify-self: end;
 }
 #txtMessage {
-    border-color: $bg-color-orange;
+    border-color: rgb(146, 145, 145);
     border-width: 2px;;
   font-family: sans-serif;
   border-radius: 5px;
   resize: none;
   padding: 3px;
-  margin-top: 10px;
+  margin-top: 9px;
 }
 .coltwo {
   grid-column-start: 2;
@@ -78,7 +78,7 @@ text-decoration: underline;
     padding-left: 93px;
     padding-right: 93px;
     height: 30px;
-    background-color: rgb(18, 143, 38);
+    background-color: $bg-color-orange;
     border: none;
     border-radius: 5px;
     margin-top: 19px;
