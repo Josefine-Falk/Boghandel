@@ -304,30 +304,9 @@ nav span {
   }
 }
 
-#aabningstider-overskrift {
-  color: #fff;
-  padding-left: 650px;
-}
-
-.aabningstider {
-  background-color: #DB4437;
-  height: 170px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.text-aabningstider {
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-}
-
 @media screen and (max-width: 550px) {
   #aabningstider-overskrift {
     padding-left: 180px;
-  }
-  .aabningstider {
-    height: 200px;
   }
 }
 
@@ -520,16 +499,15 @@ nav span {
 .footer {
   width: 100%;
   height: 260px;
-  background-color: rgba(70, 8, 8, 0.945);
+  background-color: #fff;
   font-family: sans-serif;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 20% 40% 40%;
-      grid-template-columns: 20% 40% 40%;
+  -ms-grid-columns: 20% 20% 60%;
+      grid-template-columns: 20% 20% 60%;
   -ms-grid-rows: 260px;
       grid-template-rows: 260px;
-  color: #fff;
-  font-weight: bold;
+  color: #000;
 }
 
 .footadress {
@@ -545,39 +523,41 @@ nav span {
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-left: 20px;
 }
 
-.frame {
-  padding: 15px;
+.text-aabningstider {
   -ms-grid-column: 2;
       grid-column-start: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
   -ms-grid-row-span: 3;
       grid-row-end: span 3;
-  -ms-grid-column-align: start;
-      justify-self: start;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.footadress p {
-  margin-bottom: 5px;
-}
-
-.footcontact {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
-  -ms-grid-row: 1;
-      grid-row-start: 1;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   -ms-grid-column-align: end;
       justify-self: end;
-  margin-right: 100px;
+  padding-top: 10px;
+}
+
+.frame {
+  padding: 15px;
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 3;
+      grid-row-end: span 3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 75%;
+}
+
+.footer p {
+  margin-bottom: 5px;
 }
 
 @media only screen and (max-width: 550px) {

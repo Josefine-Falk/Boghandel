@@ -9,12 +9,12 @@ form {
 
 form input {
   margin: 10px;
-  border: solid;
-  border-color: #DB4437;
-  border-width: 2px;
-  height: 20px;
+  height: 23px;
   border-radius: 5px;
   padding: 3px;
+  border: none;
+  -webkit-box-shadow: 2px 5px 5px #929191;
+          box-shadow: 2px 5px 5px #929191;
 }
 
 #txtBook {
@@ -65,6 +65,8 @@ form input {
   width: 200px;
   -ms-grid-column-align: center;
       justify-self: center;
+  -webkit-box-shadow: 2px 5px 5px #929191;
+          box-shadow: 2px 5px 5px #929191;
 }
 
 .btn:hover {
