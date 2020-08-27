@@ -569,14 +569,16 @@ nav span {
 @media only screen and (max-width: 550px) {
   .footer {
     font-size: 14px;
+    -ms-grid-columns: 30% 30% 40%;
+        grid-template-columns: 30% 30% 40%;
   }
   .frame {
     max-width: 80%;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-grid-column-align: end;
+        justify-self: end;
   }
   .footcontact {
-    max-width: 50%;
+    max-width: 30%;
   }
 }
 /*# sourceMappingURL=test.css.map */
