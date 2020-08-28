@@ -92,7 +92,6 @@ $bg-color-grey:rgb(236, 234, 234);
     margin: 0;
     max-width: auto;
     height: 55px;
-    border-radius: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -129,9 +128,8 @@ $bg-color-grey:rgb(236, 234, 234);
   
   @media screen and (max-width: 550px) {
     #logo-boghandel{
-      height: 10px;
+      height: 50px;
     }
-  
     .toggle {
       text-align: right;
       clear: both;
@@ -141,10 +139,8 @@ $bg-color-grey:rgb(236, 234, 234);
       cursor: pointer;
       height: 40px;
       font-size: 20px;
-      color: $bg-color-white;
-      background: $bg-color-black;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
+      color: $bg-color-black;
+      background: $bg-color-white;
       -webkit-transition: all .1s linear;
       transition: all .1s linear;
     }
@@ -240,7 +236,6 @@ $bg-color-grey:rgb(236, 234, 234);
     display: block;
   }
   
-
   /*video*/
   .text-video{
     position: absolute;
@@ -266,46 +261,13 @@ $bg-color-grey:rgb(236, 234, 234);
   }
   
   @media screen and (max-width: 550px) {
-    .slideshow{
-      width: 10px;
-      height: 570px;
-     padding-left: 6px;
-    }
-  }
-
-/*Om os*/
-  
-  #about-skrift{
-    text-align: center;
-    color: $bg-color-white;
-    padding: 2px;
-  }
-  .about{
-    background-color:$bg-color-darkred ;
-    height: 200px;
-    padding: 15px;
-    margin-bottom: 20px;
-  }
-
-  .text-about{
-    text-align: center;
-    font-size: 18px;
-    color: $bg-color-white;
-    padding: 20px;
-  }
-  @media screen and (max-width: 550px) {
-    .about{
-      height: 420px;
-    }
-  }
-  @media screen and (max-width: 550px) {
-    #aabningstider-overskrift{
-      padding-left: 180px;
-    }
-  }
-/*Månedens bog*/
-
-  
+    .text-video{
+    position: static;
+    width: 96%;
+    font-size: 14px;
+    background-color: $bg-color-black;
+}
+}
 
   /*Nyheder*/
   .nyheder{
