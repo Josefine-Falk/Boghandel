@@ -32,7 +32,7 @@ header img {
 }
 
 .joinform {
-  color: rgba(70, 8, 8, 0.945);
+  color: #000;
   max-width: 400px;
   margin-right: 50px;
   -ms-grid-column: 1;
@@ -119,7 +119,7 @@ header img {
   max-width: 70%;
   -ms-grid-column-align: center;
       justify-self: center;
-  color: rgba(70, 8, 8, 0.945);
+  color: #000;
   margin-bottom: 17px;
   -webkit-box-shadow: 2px 5px 5px #929191;
           box-shadow: 2px 5px 5px #929191;
@@ -134,7 +134,7 @@ header img {
   max-width: 70%;
   -ms-grid-column-align: start;
       justify-self: start;
-  color: rgba(70, 8, 8, 0.945);
+  color: #000;
   margin-bottom: 17px;
   -webkit-box-shadow: 2px 5px 5px #929191;
           box-shadow: 2px 5px 5px #929191;

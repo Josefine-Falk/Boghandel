@@ -29,7 +29,7 @@ header img {
   border-bottom: solid;
 }
   .joinform {
-    color: $bg-color-darkred;
+    color: $bg-color-black;
     max-width: 400px;
     margin-right: 50px;
     grid-column-start: 1;
@@ -94,7 +94,7 @@ text-decoration: underline;
     grid-column-start: 2;
     max-width: 70%;
     justify-self: center;
-    color: $bg-color-darkred;
+    color: $bg-color-black;
     margin-bottom: 17px;
     box-shadow: 2px 5px 5px rgb(146, 145, 145);
     border-radius: 5px;
@@ -105,7 +105,7 @@ text-decoration: underline;
   grid-column-start: 3;
   max-width: 70%;
   justify-self: start;
-  color: $bg-color-darkred;
+  color: $bg-color-black;
   margin-bottom: 17px;
   box-shadow: 2px 5px 5px rgb(146, 145, 145);
   border-radius: 5px;
