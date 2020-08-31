@@ -14,15 +14,6 @@ $bg-color-grey:rgb(236, 234, 234);
    
   }
 
-  #overskrift-forside{
-    text-align: center;
-  }
-  @media screen and (max-width: 550px) {
-    #overskrift-forside{
-      padding-left: 50px;
-      font-size: 30px;
-    }
-  }
   /* Menu */
   #logo-boghandel{
     height: 60px;
@@ -50,7 +41,7 @@ $bg-color-grey:rgb(236, 234, 234);
     padding: 1rem;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
+    transition-duration: 0.5s; 
   }
   li a{
     color: $bg-color-black;
@@ -70,7 +61,7 @@ $bg-color-grey:rgb(236, 234, 234);
     left: 0;
     display: none;
   }
-  ul li:hover >ul, 
+  ul li:hover > ul, 
   ul li ul:hover{
     visibility: visible;
     opacity: 1;
@@ -97,28 +88,28 @@ $bg-color-grey:rgb(236, 234, 234);
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+    justify-content: space-around;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     list-style-type: none;
   }
   
   .menu li a {
     text-decoration: none;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     border-radius: 5px;
     font-size: 20px;
     padding: 10px 15px;
   }
 
   nav span{
-    display: none;
+     display: none;
   }
   @media screen and (max-width: 600px) {
     .menu li a {
@@ -131,21 +122,34 @@ $bg-color-grey:rgb(236, 234, 234);
       height: 50px;
     }
     .toggle {
+      position: absolute;
+      right: 5%;
+      top: 1%;
+      z-index: 2;
+      transform: translate(-5%, -50%);
       text-align: right;
       clear: both;
       display: block;
       font-size: 14px;
       line-height: 50px;
       cursor: pointer;
-      height: 40px;
+      height: 3px;
+      width: 30px;
+      margin: 5px;
       font-size: 20px;
-      color: $bg-color-black;
+      color: $bg-color-white;
       background: $bg-color-white;
       -webkit-transition: all .1s linear;
       transition: all .1s linear;
     }
     .toggle:hover {
       background: $bg-color-black(70, 8, 8, 0.945);
+    }
+    .toggle:active{
+      color: black !important;
+    }
+    .toggle:focus{
+      color: black !important;
     }
     #checkbox1:checked + label .demo li {
       opacity: 1;
@@ -165,13 +169,13 @@ $bg-color-grey:rgb(236, 234, 234);
       display: flex;
       -webkit-box-orient: vertical;
       -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
       -ms-flex-pack: distribute;
-          justify-content: space-around;
+      justify-content: space-around;
       -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
       height: 0px;
       -webkit-transition: height .3s linear;
       transition: height .3s linear;
@@ -182,7 +186,7 @@ $bg-color-grey:rgb(236, 234, 234);
       display: flex;
       /* magic */
       -ms-flex-item-align: center;
-          align-self: center;
+      align-self: center;
       width: 95%;
       opacity: 0;
       visibility: hidden;
@@ -191,10 +195,10 @@ $bg-color-grey:rgb(236, 234, 234);
       width: 95%;
       text-align: center;
       -ms-flex-item-align: center;
-          -ms-grid-row-align: center;
-          align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
       -ms-flex-line-pack: center;
-          align-content: center;
+      align-content: center;
     }
   }
   
@@ -202,8 +206,8 @@ $bg-color-grey:rgb(236, 234, 234);
     background: $bg-color-white;
   }
   
-  .demo li a {
-    color: $bg-color-black;
+  .demo .toggle li a {
+    color: $bg-color-black !important;
   }
   
   .demo li a:hover {
@@ -265,7 +269,7 @@ $bg-color-grey:rgb(236, 234, 234);
     position: static;
     width: 96%;
     font-size: 14px;
-    background-color: $bg-color-black;
+    background-color: #555;
 }
 }
 
@@ -319,7 +323,7 @@ $bg-color-grey:rgb(236, 234, 234);
   .Arrangementer{
     margin-top: 15px;
     height: 220px;
-    background-color: $bg-color-darkred;
+    background-color:  #555;
   }
   #arrangementer-overskrift{
     color: $bg-color-white;
@@ -393,7 +397,7 @@ $bg-color-grey:rgb(236, 234, 234);
   /*Bog-tips*/
   .bog-tips{
     height: 400px;
-    background-color: $bg-color-orange;
+    background-color: #555;
   }
   #bog-tips-overskrift{
     color: $bg-color-white;
