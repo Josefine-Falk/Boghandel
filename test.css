@@ -9,17 +9,6 @@ body {
   background-color: #eceaea;
 }
 
-#overskrift-forside {
-  text-align: center;
-}
-
-@media screen and (max-width: 550px) {
-  #overskrift-forside {
-    padding-left: 50px;
-    font-size: 30px;
-  }
-}
-
 /* Menu */
 #logo-boghandel {
   height: 60px;
@@ -138,21 +127,35 @@ nav span {
     height: 50px;
   }
   .toggle {
+    position: absolute;
+    right: 5%;
+    top: 1%;
+    z-index: 2;
+    -webkit-transform: translate(-5%, -50%);
+            transform: translate(-5%, -50%);
     text-align: right;
     clear: both;
     display: block;
     font-size: 14px;
     line-height: 50px;
     cursor: pointer;
-    height: 40px;
+    height: 3px;
+    width: 30px;
+    margin: 5px;
     font-size: 20px;
-    color: #000;
+    color: #fff;
     background: #fff;
     -webkit-transition: all .1s linear;
     transition: all .1s linear;
   }
   .toggle:hover {
     background: #000 70, 8, 8, 0.945;
+  }
+  .toggle:active {
+    color: black !important;
+  }
+  .toggle:focus {
+    color: black !important;
   }
   #checkbox1:checked + label .demo li {
     opacity: 1;
@@ -209,8 +212,8 @@ nav span {
   background: #fff;
 }
 
-.demo li a {
-  color: #000;
+.demo .toggle li a {
+  color: #000 !important;
 }
 
 .demo li a:hover {
@@ -283,7 +286,7 @@ nav span {
     position: static;
     width: 96%;
     font-size: 14px;
-    background-color: #000;
+    background-color: #555;
   }
 }
 
@@ -343,7 +346,7 @@ nav span {
 .Arrangementer {
   margin-top: 15px;
   height: 220px;
-  background-color: rgba(70, 8, 8, 0.945);
+  background-color: #555;
 }
 
 #arrangementer-overskrift {
@@ -428,7 +431,7 @@ nav span {
 /*Bog-tips*/
 .bog-tips {
   height: 400px;
-  background-color: #DB4437;
+  background-color: #555;
 }
 
 #bog-tips-overskrift {
