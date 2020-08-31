@@ -24,13 +24,31 @@ header img {
   border-bottom: solid;
 }
 
-form {
+.loanform {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25% 25% 25% 25%;
-      grid-template-columns: 25% 25% 25% 25%;
-  -ms-grid-rows: 50px 50px 50px 100px;
-      grid-template-rows: 50px 50px 50px 100px;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 80px 380px;
+      grid-template-rows: 80px 380px;
+}
+
+form {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  -ms-grid-row-align: center;
+      align-self: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50px 50px 50px 50px;
+      grid-template-rows: 50px 50px 50px 50px;
 }
 
 form input {
@@ -44,38 +62,38 @@ form input {
 }
 
 #txtBook {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   -ms-grid-row: 1;
       grid-row-start: 1;
 }
 
 #txtName {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   -ms-grid-row: 2;
       grid-row-start: 2;
 }
 
 #txtEmail {
-  -ms-grid-column: 3;
-      grid-column-start: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
   -ms-grid-row: 2;
       grid-row-start: 2;
 }
 
 #txtAdress {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
   -ms-grid-row: 3;
       grid-row-start: 3;
 }
 
 #loan {
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  grid-column-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
   -ms-grid-row: 4;
       grid-row-start: 4;
 }
@@ -98,6 +116,21 @@ form input {
 .btn:hover {
   background-color: #DB4437;
   color: rgba(70, 8, 8, 0.945);
+}
+
+.area-buttons {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+}
+
+.vanilla-calendar {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 @media only screen and (max-width: 550px) {

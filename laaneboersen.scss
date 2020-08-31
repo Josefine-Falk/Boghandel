@@ -24,10 +24,20 @@ header {
     font-size: 180%;
     border-bottom: solid;
   }
-form {
+.loanform {
     display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 50px 50px 50px 100px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 80px 380px;
+}
+form {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  justify-self: end;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50px 50px 50px 50px;
 }
 form input {
   border: solid white;
@@ -38,24 +48,25 @@ form input {
     box-shadow: 2px 5px 5px rgb(146, 145, 145);
     }
 #txtBook {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 1;
 }
 #txtName {
-    grid-column-start: 2;
+    grid-column-start: 1;
     grid-row-start: 2;
 }
 #txtEmail {
-    grid-column-start: 3;
+    grid-column-start: 2;
     grid-row-start: 2;
 }
-#txtAdress {grid-column-start: 2;
-    grid-column-end: 4;
+#txtAdress {
+  grid-column-start: 1;
+  grid-column-end: 3;
 grid-row-start: 3;
 }
 #loan {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
     grid-row-start: 4;
 }
 .btn {
@@ -73,6 +84,15 @@ grid-row-start: 3;
   .btn:hover {
     background-color: $bg-color-orange;
     color: $bg-color-darkred;
+  }
+  .area-buttons {
+    grid-column-start: 2;
+    grid-row-start: 1;
+  }
+  .vanilla-calendar {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   @media only screen and (max-width: 550px) {
