@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-* {
-    font-family: 'Open Sans';
-}
+
 body {
     margin: 0;
     padding: 0;
@@ -80,4 +78,7 @@ button.info {
     margin: 10px;
     padding: 10px;
     text-align: center;
+}
+.area-buttons button:hover {
+    color: rgba(70, 8, 8, 0.945);
 }

@@ -29,8 +29,8 @@ header img {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 80px 320px 50px;
-      grid-template-rows: 80px 320px 50px;
+  -ms-grid-rows: 80px 300px 50px;
+      grid-template-rows: 80px 300px 50px;
 }
 
 form {
@@ -152,8 +152,8 @@ form input {
   .loanform {
     display: -ms-grid;
     display: grid;
-    -ms-grid-rows: 180px 320px 30px;
-        grid-template-rows: 180px 320px 30px;
+    -ms-grid-rows: 180px 300px 30px;
+        grid-template-rows: 180px 300px 30px;
     -ms-grid-columns: 40% 60%;
         grid-template-columns: 40% 60%;
   }

@@ -27,7 +27,7 @@ header {
 .loanform {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 80px 320px 50px;
+    grid-template-rows: 80px 300px 50px;
 }
 form {
   grid-column-start: 1;
@@ -108,7 +108,7 @@ grid-row-start: 3;
 }
 .loanform {
   display: grid;
-  grid-template-rows: 180px 320px 30px;
+  grid-template-rows: 180px 300px 30px;
   grid-template-columns: 40% 60%;
 }
 form {
