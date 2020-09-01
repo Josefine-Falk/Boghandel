@@ -14,12 +14,10 @@ $bg-color-grey:rgb(236, 234, 234);
    
   }
 
-  /* Menu */
   #logo-boghandel{
     height: 60px;
   }
   nav {
-    font-family: sans-serif;
     position: sticky;
     top: 0;
     color: white;
@@ -239,6 +237,7 @@ $bg-color-grey:rgb(236, 234, 234);
     text-decoration: none;
     display: block;
   }
+  
   
   /*video*/
   .text-video{
