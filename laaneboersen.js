@@ -11,6 +11,13 @@ btn.addEventListener("click", function() {
     return false;
     //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
     }   
+    let writer = document.getElementById("txtWriter"); //henter det valgte ID
+    if(!writer.value) {writer.style.borderColor = 'red';
+    writer.focus();
+    hasErrors = true;
+    return false;
+    //gør feltets kant rød hvis det er tomt, når der trykkes på 'send'
+    }
     let name = document.getElementById("txtName"); //henter det valgte ID
     if(!name.value) {name.style.borderColor = 'red';
     name.focus();

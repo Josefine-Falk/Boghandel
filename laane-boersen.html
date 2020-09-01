@@ -36,14 +36,15 @@
   <div class="herotext">LÅN EN BOG!</div>
 </header>
     <div class="loanform">
-      <form>
-        <input type="text" placeholder="Bog" name="txtBook" class="loanfield" id="txtBook"/>
-        <input type="text" placeholder="Navn" name="txtName" class="loanfield" id="txtName"/>
-        <input type="text" placeholder="E-mail" name="txtEmail" class="loanfield" id="txtEmail"/>
-        <input type="text" placeholder="Adresse" name="txtAdress" class="loanfield" id="txtAdress"/>
-        <button type="button" id="loan" class="btn btn-success">LÅN</button>
+      <form id="msgform">
+        <input type="text" placeholder="Bog" name="txtBook" class="loanfield" id="txtBook" />
+        <input type="text" placeholder="Forfatter" name="txtWriter" class="loanfield" id="txtWriter" />
+        <input type="text" placeholder="Navn" name="txtName" class="loanfield" id="txtName" />
+        <input type="text" placeholder="E-mail" name="txtEmail" class="loanfield" id="txtEmail" />
+        <input type="text" placeholder="Adresse" name="txtAdress" class="loanfield" id="txtAdress" />
+        <input type="button" onclick="location.href='/lb_underside.html';" value="LÅN" id="loan" class="btn btn-success" />
       </form>
-    </div>
+    
     <div class="area-buttons">
       <button class="info" name="pastDates">Disable past dates</button>
       <button class="info" name="availableDates">Set available dates</button>
@@ -51,7 +52,7 @@
   </div>
 
    <div id="myCalendar" class="vanilla-calendar"></div>
-
+  </div>
   
     <!-- footer -->
     <footer class="footer">
@@ -75,11 +76,7 @@
       <iframe class="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5131.608344408829!2d10.393397675886211!3d55.51325211552781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464ce23edea7f155%3A0x9711b8fd7fcdd695!2sBog%20%26%20id%C3%A9%20Otterup!5e0!3m2!1sda!2sdk!4v1597827918911!5m2!1sda!2sdk" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
       
     </footer>
-<<<<<<< HEAD
-
     <script src="laaneboersen.js"></script>
-=======
     <script src="js/app.js"></script> 
->>>>>>> Josefine
 </body>
 </html>
