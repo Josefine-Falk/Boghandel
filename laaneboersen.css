@@ -29,8 +29,8 @@ header img {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
-  -ms-grid-rows: 80px 380px;
-      grid-template-rows: 80px 380px;
+  -ms-grid-rows: 80px 320px 50px;
+      grid-template-rows: 80px 320px 50px;
 }
 
 form {
@@ -73,6 +73,13 @@ form input {
       grid-column-start: 1;
   -ms-grid-row: 2;
       grid-row-start: 2;
+}
+
+#txtWriter {
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
 }
 
 #txtEmail {
@@ -123,6 +130,8 @@ form input {
       grid-column-start: 2;
   -ms-grid-row: 1;
       grid-row-start: 1;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .vanilla-calendar {
@@ -131,12 +140,81 @@ form input {
   -ms-grid-row: 2;
       grid-row-start: 2;
   grid-row-end: 3;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 @media only screen and (max-width: 550px) {
   .btn {
     height: 30px;
     width: 100px;
+  }
+  .loanform {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 180px 320px 30px;
+        grid-template-rows: 180px 320px 30px;
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+  form {
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-grid-row-align: start;
+        align-self: start;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 50px 50px 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  }
+  #txtBook {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+  }
+  #txtName {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+  }
+  #txtWriter {
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  #txtEmail {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 4;
+        grid-row-start: 4;
+  }
+  #txtAdress {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 5;
+        grid-row-start: 5;
+  }
+  #loan {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+    -ms-grid-row: 6;
+        grid-row-start: 6;
+  }
+  .area-buttons button {
+    margin-bottom: 5px;
   }
 }
 /*# sourceMappingURL=laaneboersen.css.map */
