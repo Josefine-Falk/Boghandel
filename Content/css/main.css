@@ -194,6 +194,8 @@ nav span {
     width: 95%;
     opacity: 0;
     visibility: hidden;
+    background-color: black;
+    color: #fff;
   }
   .menu li a {
     width: 95%;
@@ -203,6 +205,7 @@ nav span {
     align-self: center;
     -ms-flex-line-pack: center;
     align-content: center;
+    color: #fff;
   }
 }
 
@@ -552,4 +555,4 @@ nav span {
     max-width: 30%;
   }
 }
-/*# sourceMappingURL=test.css.map */
+/*# sourceMappingURL=main.css.map */

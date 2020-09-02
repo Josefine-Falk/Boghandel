@@ -74,8 +74,8 @@ $bg-color-grey:rgb(236, 234, 234);
   #checkbox1,
   .toogle {
     display: none;
+    
   }
-
   .menu {
     padding: 0;
     margin: 0;
@@ -188,6 +188,8 @@ $bg-color-grey:rgb(236, 234, 234);
       width: 95%;
       opacity: 0;
       visibility: hidden;
+      background-color: black;
+      color: $bg-color-white;
     }
     .menu li a {
       width: 95%;
@@ -197,6 +199,7 @@ $bg-color-grey:rgb(236, 234, 234);
       align-self: center;
       -ms-flex-line-pack: center;
       align-content: center;
+      color: $bg-color-white;
     }
   }
   
