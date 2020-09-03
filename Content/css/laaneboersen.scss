@@ -3,6 +3,7 @@ $bg-color-darkred: rgba(70, 8, 8, 0.945);
 $bg-color-white:#fff;
 $bg-color-black:#000;
 
+//Hero billede med tekst overlay
 header {
     position: relative;
     color: white;
@@ -100,7 +101,7 @@ grid-row-start: 3;
     grid-row-end: 3;
     justify-self: start;
   }
-
+//Media queries
   @media only screen and (max-width: 550px) {
 .btn {
     height: 30px;

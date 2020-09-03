@@ -7,6 +7,7 @@ $bg-color-black:#000;
     grid-template-columns: 50% 25% 25%;
     display: grid;
 }
+//Hero billede med tekst overlay
 header {
   position: relative;
   color: white;
@@ -28,6 +29,7 @@ header img {
   font-size: 180%;
   border-bottom: solid;
 }
+//Formular
   .joinform {
     color: $bg-color-black;
     max-width: 400px;
@@ -88,6 +90,7 @@ text-decoration: underline;
   .btn:hover {
     color: $bg-color-darkred;
   }
+  //Infotekster
 .joindiv {
   padding-top: 10px;
   padding-left: 10px;
@@ -118,6 +121,7 @@ text-decoration: underline;
 .joininfo {
     margin-bottom: 7px;
 }
+//Media queries
 @media only screen and (max-width: 550px) {
 .joinpage {
     display: grid;
