@@ -263,10 +263,12 @@ nav span {
   font-size: 20px;
   line-height: 30px;
   background-color: rgba(0, 0, 0, 0.507);
+  /* den sorte boks i teksten med en opacity*/
 }
 
 .hero-video {
   width: 100%;
+  /* så videoen fylder 100% */
 }
 
 .slideshow {
