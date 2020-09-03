@@ -3,10 +3,7 @@ $bg-color-darkred: rgba(70, 8, 8, 0.945);
 $bg-color-white:#fff;
 $bg-color-black:#000;
 
-.joinpage {
-    grid-template-columns: 50% 25% 25%;
-    display: grid;
-}
+
 //Hero billede med tekst overlay
 header {
   position: relative;
@@ -29,7 +26,14 @@ header img {
   font-size: 180%;
   border-bottom: solid;
 }
+//Selve sidens indhold er opdelt i et gridsystem med tre kolonner, den første fylder 50%
+//og de sidste to fylder 25%
+.joinpage {
+  grid-template-columns: 50% 25% 25%;
+  display: grid;
+}
 //Formular
+//Selve formularen er så sat i første kolonne
   .joinform {
     color: $bg-color-black;
     max-width: 400px;
@@ -37,6 +41,8 @@ header img {
     grid-column-start: 1;
     justify-self: center;
   }
+  //Inde i selve formularen starter der så et nyt gridsystem igen, denne gang med to kolonner,
+  //som begge er på 75%
   .msgform {
     display: grid;
     grid-template-columns: 75% 75%;
@@ -54,6 +60,7 @@ width: 213px;
 box-shadow: 2px 5px 5px rgb(146, 145, 145);
 
 }
+//For at opdele formularen i de to kolonner er de indelt i to klasser ved navn colone og coltwo
 .colone {
   grid-column-start: 1;
   justify-self: end;
@@ -91,6 +98,8 @@ text-decoration: underline;
     color: $bg-color-darkred;
   }
   //Infotekster
+  //Infoteksterne er opdelt i to individuelle diver,
+  //som hver især starter i deres egen kolonne i det overordnede gridsystem
 .joindiv {
   padding-top: 10px;
   padding-left: 10px;
@@ -123,6 +132,8 @@ text-decoration: underline;
 }
 //Media queries
 @media only screen and (max-width: 550px) {
+  //Kolonnerne i det overordnede gridsystem blev i media queries gjort bredere,
+  //og ændret så der kun var én overordnet kolonne, til gengæld blev der indsat tre rækker
 .joinpage {
     display: grid;
     grid-template-columns: 100%;
@@ -150,6 +161,7 @@ text-decoration: underline;
     margin-right: 0%;
     margin-left: 0%;
 }
+//det underordnede gridsystem i formularen blev også ændret til kun én kolonne, men med to rækker
 .msgform {
   display: grid;
   grid-template-columns: 100%;
