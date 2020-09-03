@@ -23,8 +23,8 @@ let VanillaCalendar = (function () {
             month: null,
             month_label: null,
             onSelect: (data, elem) => {},
-            months: ['Januar', 'Februar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'December'], 
-            shortWeekday: ['Søn', 'Man', 'Tirs', 'Ons', 'Tors', 'Fre', 'Lør'], 
+            months: ['Januar', 'Februar', 'Marts', 'April', 'Maj', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'December'], //Her er maanederne
+            shortWeekday: ['Søn', 'Man', 'Tirs', 'Ons', 'Tors', 'Fre', 'Lør'], //Her er ugedagene som skal være i kalenderen
         }
         for (let k in options) if (opts.hasOwnProperty(k)) opts[k] = options[k]
         
